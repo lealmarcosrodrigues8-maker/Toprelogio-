@@ -1,274 +1,85 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Top Relógio ⌚ | Importados com Desconto e Frete Grátis</title>
-  <meta name="description" content="Relógios importados com até 20% de desconto no Pix, frete grátis Brasil e pagamento seguro via Mercado Pago. Fale no WhatsApp e escolha seu modelo.">
-  <meta property="og:title" content="Top Relógio | Importados com Desconto">
-  <meta property="og:description" content="Desconto no Pix, frete grátis e pagamento seguro via Mercado Pago.">
-  <meta property="og:type" content="website">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Vendas</title>
   <style>
-    :root{
-      --brand:#111827;      /* fundo principal (cinza/preto) */
-      --accent:#ef4444;     /* vermelho destaque */
-      --text:#111; 
-      --muted:#6b7280; 
-      --card:#ffffff; 
-      --bg:#f6f7fb;
-      --ring: #e5e7eb;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+      text-align: center;
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;color:var(--text);background:var(--bg)}
-    a{text-decoration:none;color:inherit}
-    img{max-width:100%;height:auto;display:block}
-    .container{width:min(1100px,92%);margin:0 auto}
-    /* Header */
-    header{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--ring)}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:12px}
-    .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
-    .logo-badge{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#111827, #374151);display:grid;place-items:center;color:#fff;font-size:18px}
-    .pill{display:inline-flex;align-items:center;gap:8px;background:#111827;color:#fff;padding:10px 16px;border-radius:999px;border:2px solid #000;box-shadow:0 6px 16px rgba(0,0,0,.12);font-weight:700}
-    .pill small{opacity:.9;font-weight:600}
-    /* Hero */
-    .hero{background:radial-gradient(1000px 400px at 20% -10%, #ffe4e4 0%, transparent 60%), #fff;border-bottom:1px solid var(--ring)}
-    .hero-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:center;padding:36px 0}
-    .hero h1{font-size:clamp(28px,5vw,40px);line-height:1.12;margin:4px 0 10px}
-    .hero p{color:var(--muted);margin:0 0 18px}
-    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
-    .badge{border:1px dashed #ddd;border-radius:999px;padding:8px 12px;background:#fff}
-    .card-ghost{background:#fff;border:1px solid var(--ring);border-radius:16px;padding:14px}
-    .hero-img{border-radius:16px;border:1px solid var(--ring);background:#fafafa}
-    /* CTA button */
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:14px;background:var(--accent);color:#fff;font-weight:800;border:2px solid #000;box-shadow:0 8px 0 #9a1f1f, 0 18px 24px rgba(239,68,68,.3);transform:translateY(0);transition:.12s}
-    .btn:active{transform:translateY(2px);box-shadow:0 6px 0 #9a1f1f, 0 12px 18px rgba(239,68,68,.25)}
-    .btn .sub{font-weight:600;opacity:.9}
-    /* Products */
-    .section{padding:34px 0}
-    .section h2{font-size:clamp(22px,4vw,30px);margin:0 0 8px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    @media (max-width:900px){.hero-wrap{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:600px){.grid{grid-template-columns:1fr}}
-    .prod{background:var(--card);border:1px solid var(--ring);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
-    .prod .body{padding:12px 14px;display:flex;flex-direction:column;gap:6px}
-    .price{display:flex;align-items:center;gap:8px}
-    .old{color:#9ca3af;text-decoration:line-through}
-    .tag{display:inline-block;background:#111827;color:#fff;border-radius:999px;padding:4px 10px;font-size:12px}
-    /* Social proof */
-    .testi{display:flex;gap:14px;align-items:flex-start}
-    .avatar{width:44px;height:44px;border-radius:50%;background:#111827;display:grid;place-items:center;color:#fff;font-weight:800}
-    /* Footer */
-    footer{background:#0b0c10;color:#e5e7eb;margin-top:20px}
-    footer .container{padding:28px 0}
-    .foot{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
-    .mini{color:#9ca3af}
-    /* Tiny helpers */
-    .muted{color:var(--muted)}
-    .list{display:grid;gap:8px;margin:0;padding-left:18px}
+    header {
+      background: #b30000;
+      color: white;
+      padding: 20px 0;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    .container {
+      padding: 30px;
+    }
+    .produto {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .produto img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .botao {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #b30000;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .botao:hover {
+      background: #800000;
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Top Vendas</h1>
+    <p>Relógios importados de luxo com desconto especial</p>
+  </header>
 
-<header>
-  <div class="container nav">
-    <div class="logo">
-      <div class="logo-badge">TR</div>
-      <div>
-        <div style="font-size:16px;line-height:1">Top Relógio</div>
-        <small class="muted">Importados & Acessórios</small>
-      </div>
-    </div>
-
-    <!-- BOTÃO WHATSAPP (edite apenas o número) -->
-    <a class="pill" href="https://wa.me/5522999790572?text=Ol%C3%A1!%20Quero%20ver%20os%20rel%C3%B3gios%20dispon%C3%ADveis%20com%20desconto." target="_blank" rel="noopener">
-      <span>💬 WhatsApp</span>
-      <small>| Fale agora</small>
-    </a>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container hero-wrap">
-    <div>
-      <div class="tag">Novo estoque</div>
-      <h1>Relógios importados com <span style="color:var(--accent)">desconto no Pix</span> e frete grátis</h1>
-      <p>Modelos casuais, esportivos e de luxo. Pagamento seguro via Mercado Pago. Envio nacional com código de rastreio.</p>
-
-      <div class="badges">
-        <span class="badge">✅ Até <b>20% OFF</b> no Pix</span>
-        <span class="badge">🚚 Frete grátis Brasil</span>
-        <span class="badge">🛡️ Mercado Pago seguro</span>
-        <span class="badge">💧 Resistentes à água*</span>
-      </div>
-
-      <!-- CTA PRINCIPAL -->
-      <div class="card-ghost" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
-        <a class="btn" href="https://wa.me/5522999790572?text=Quero%20um%20or%C3%A7amento%20do%20rel%C3%B3gio%20agora%20%F0%9F%94%8D" target="_blank" rel="noopener">
-          <span>Comprar no WhatsApp</span>
-          <span class="sub">Resposta rápida</span>
-        </a>
-        <span class="muted">Sem compromisso • Tire suas dúvidas</span>
-      </div>
-    </div>
-
-    <!-- Imagem destaque (troque a URL pelo seu banner) -->
-    <div class="hero-img">
-      <img src="https://via.placeholder.com/900x520?text=Banner+Top+Rel%C3%B3gio" alt="Relógio importado em destaque">
-    </div>
-  </div>
-</section>
-
-<section class="section">
   <div class="container">
-    <h2>Escolha seu modelo</h2>
-    <p class="muted">Troque as imagens pelos seus modelos (ORUSS, Curren, LIGE, etc.). O botão leva direto pro seu WhatsApp.</p>
-
-    <div class="grid">
-      <!-- CARD 1 -->
-      <article class="prod">
-        <img src="https://via.placeholder.com/800x600?text=Rel%C3%B3gio+01" alt="Relógio 01">
-        <div class="body">
-          <strong>Relógio ORUSS Azul</strong>
-          <div class="price">
-            <span class="old">R$ 199,90</span>
-            <span><b>R$ 169,90</b> no Pix</span>
-          </div>
-          <small class="muted">Caixa de aço • Pulseira metálica • Analógico</small>
-          <a class="pill" style="margin-top:8px" href="https://wa.me/5522999790572?text=Tenho%20interesse%20no%20Rel%C3%B3gio%20ORUSS%20Azul" target="_blank" rel="noopener">Pedir no WhatsApp</a>
-        </div>
-      </article>
-
-      <!-- CARD 2 -->
-      <article class="prod">
-        <img src="https://via.placeholder.com/800x600?text=Rel%C3%B3gio+02" alt="Relógio 02">
-        <div class="body">
-          <strong>Relógio Curren Classic</strong>
-          <div class="price">
-            <span class="old">R$ 189,90</span>
-            <span><b>R$ 159,90</b> no Pix</span>
-          </div>
-          <small class="muted">Casual • Pulseira de aço • Dia e data</small>
-          <a class="pill" style="margin-top:8px" href="https://wa.me/5522999790572?text=Quero%20o%20Curren%20Classic" target="_blank" rel="noopener">Pedir no WhatsApp</a>
-        </div>
-      </article>
-
-      <!-- CARD 3 -->
-      <article class="prod">
-        <img src="https://via.placeholder.com/800x600?text=Rel%C3%B3gio+03" alt="Relógio 03">
-        <div class="body">
-          <strong>Relógio Esportivo</strong>
-          <div class="price">
-            <span class="old">R$ 169,90</span>
-            <span><b>R$ 139,90</b> no Pix</span>
-          </div>
-          <small class="muted">Pulseira silicone • Resistente à água*</small>
-          <a class="pill" style="margin-top:8px" href="https://wa.me/5522999790572?text=Quero%20o%20Rel%C3%B3gio%20Esportivo" target="_blank" rel="noopener">Pedir no WhatsApp</a>
-        </div>
-      </article>
-
-      <!-- CARD 4 -->
-      <article class="prod">
-        <img src="https://via.placeholder.com/800x600?text=Rel%C3%B3gio+04" alt="Relógio 04">
-        <div class="body">
-          <strong>Relógio Business</strong>
-          <div class="price">
-            <span class="old">R$ 219,90</span>
-            <span><b>R$ 179,90</b> no Pix</span>
-          </div>
-          <small class="muted">Clássico • Pulseira couro</small>
-          <a class="pill" style="margin-top:8px" href="https://wa.me/5522999790572?text=Quero%20o%20Rel%C3%B3gio%20Business" target="_blank" rel="noopener">Pedir no WhatsApp</a>
-        </div>
-      </article>
-
-      <!-- CARD 5 -->
-      <article class="prod">
-        <img src="https://via.placeholder.com/800x600?text=Rel%C3%B3gio+05" alt="Relógio 05">
-        <div class="body">
-          <strong>Relógio Luxo Preto</strong>
-          <div class="price">
-            <span class="old">R$ 249,90</span>
-            <span><b>R$ 199,90</b> no Pix</span>
-          </div>
-          <small class="muted">Design premium • Mostrador multi</small>
-          <a class="pill" style="margin-top:8px" href="https://wa.me/5522999790572?text=Quero%20o%20Rel%C3%B3gio%20Luxo%20Preto" target="_blank" rel="noopener">Pedir no WhatsApp</a>
-        </div>
-      </article>
-
-      <!-- CARD 6 -->
-      <article class="prod">
-        <img src="https://via.placeholder.com/800x600?text=Rel%C3%B3gio+06" alt="Relógio 06">
-        <div class="body">
-          <strong>Relógio Jovem Sport</strong>
-          <div class="price">
-            <span class="old">R$ 159,90</span>
-            <span><b>R$ 129,90</b> no Pix</span>
-          </div>
-          <small class="muted">Pulseira silicone • Visual arrojado</small>
-          <a class="pill" style="margin-top:8px" href="https://wa.me/5522999790572?text=Quero%20o%20Rel%C3%B3gio%20Jovem%20Sport" target="_blank" rel="noopener">Pedir no WhatsApp</a>
-        </div>
-      </article>
+    <div class="produto">
+      <img src="https://i.imgur.com/Nm0QhZL.jpeg" alt="Relógio importado">
+      <h2>Relógio ORUSS</h2>
+      <p>Luxo, estilo e qualidade em um só relógio.</p>
+      <p><strong>20% de desconto no Pix + Frete Grátis</strong></p>
+      <a href="https://wa.me/5522999790572?text=Olá!%20Quero%20ver%20os%20relógios%20disponíveis%20na%20promoção" class="botao">Comprar pelo WhatsApp</a>
     </div>
   </div>
-</section>
 
-<section class="section">
-  <div class="container">
-    <h2>Por que comprar com a Top Relógio?</h2>
-    <ul class="list">
-      <li>🛡️ <b>Pagamento seguro</b> via Mercado Pago.</li>
-      <li>🚚 <b>Frete grátis</b> para todo o Brasil.</li>
-      <li>💬 Atendimento rápido no WhatsApp e código de rastreio.</li>
-      <li>💧 Resistência à água: <small class="muted">verifique o nível indicado para cada modelo.</small></li>
-    </ul>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="testi card-ghost">
-      <div class="avatar">R</div>
-      <div>
-        <strong>“Chegou em 7 dias, perfeito!” – Rafael, SP</strong>
-        <p class="muted">Feedback de quem já comprou. Atendimento rápido e produto de qualidade.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>Perguntas rápidas</h2>
-    <div class="grid" style="grid-template-columns:repeat(3,1fr)">
-      <div class="card-ghost">
-        <b>Qual o prazo de entrega?</b>
-        <p class="muted">Média de <b>7 a 10 dias</b> úteis, com rastreio.</p>
-      </div>
-      <div class="card-ghost">
-        <b>Como funciona o pagamento?</b>
-        <p class="muted">Pix com desconto, cartão em até 3x via Mercado Pago.</p>
-      </div>
-      <div class="card-ghost">
-        <b>Tem garantia?</b>
-        <p class="muted">Sim, garantia contra defeito de fabricação. Suporte pelo WhatsApp.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container foot">
-    <div>
-      <div style="font-weight:800">Top Relógio</div>
-      <div class="mini">© <span id="y"></span> — Importados & Acessórios</div>
-    </div>
-    <a class="pill" href="https://wa.me/5522999790572?text=Ol%C3%A1!%20Quero%20ver%20os%20rel%C3%B3gios%20dispon%C3%ADveis." target="_blank" rel="noopener">💬 Falar no WhatsApp</a>
-  </div>
-</footer>
-
-<script>
-  // Atualiza ano no rodapé
-  document.getElementById('y').textContent = new Date().getFullYear();
-</script>
-
+  <footer>
+    <p>&copy; 2025 Top Vendas - Todos os direitos reservados</p>
+  </footer>
 </body>
 </html>
