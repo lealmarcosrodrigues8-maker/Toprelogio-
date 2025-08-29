@@ -1,68 +1,141 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Top Vendas - Loja Oficial</title>
+
   <style>
+    :root {
+      --primary: #c00000;
+      --dark: #222;
+      --light: #f5f5f5;
+      --white: #fff;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: var(--light);
       text-align: center;
     }
+
     header {
-      background: #c00;
-      color: #fff;
-      padding: 20px;
+      background: var(--primary);
+      color: var(--white);
+      padding: 20px 12px;
       font-size: 24px;
+      font-weight: bold;
     }
-    main {
-      padding: 20px;
+
+    main { padding: 20px 14px 60px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
-    img {
-      width: 250px;
-      margin: 15px 0;
+
+    .card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     }
-    a {
+
+    .card img {
+      width: 100%;
+      height: auto;
+      max-width: 320px;
+      border-radius: 8px;
+    }
+
+    .card h2 {
+      margin: 12px 0 8px;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 0 0 14px;
+      font-size: 14px;
+      line-height: 1.45;
+      color: #444;
+    }
+
+    .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background: #c00;
-      color: #fff;
+      margin-top: 6px;
+      padding: 10px 18px;
+      background: var(--primary);
+      color: var(--white);
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
+      font-weight: bold;
     }
-    footer {
-      margin-top: 20px;
-      padding: 15px;
-      background: #333;
+
+    .badge {
+      display: inline-block;
+      background: #0a7b34;
       color: #fff;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 24px;
+      padding: 18px 12px;
+      background: var(--dark);
+      color: var(--white);
+      font-size: 13px;
     }
   </style>
 </head>
+
 <body>
   <header>Top Vendas - Loja Oficial</header>
 
   <main>
-    <h1>Relógio ORUSS Preto & Dourado</h1>
-    <img src="oruss-preto-dourado.jpg" alt="Relógio ORUSS Preto e Dourado">
-    <p>Design sofisticado, resistente à água e perfeito para todas as ocasiões.</p>
-    <a href="https://wa.me/5522999790572?text=Olá!%20Quero%20comprar%20o%20Relógio%20ORUSS%20Preto%20e%20Dourado">Comprar pelo WhatsApp</a>
-  </main>
+    <div class="grid">
 
-  <main>
-    <h1>Relógio ORUSS Azul Metálico</h1>
-    <img src="oruss-azul.jpg" alt="Relógio ORUSS Azul Metálico">
-    <p>Design moderno, resistente à água e pulseira metálica azul.</p>
-    <a href="https://wa.me/5522999790572?text=Olá!%20Quero%20comprar%20o%20Relógio%20ORUSS%20Azul">Comprar pelo WhatsApp</a>
-  </main>
+      <!-- PRODUTO 1 — ORUSS PRETO & DOURADO -->
+      <article class="card">
+        <span class="badge">Pagamento seguro via Mercado Pago</span>
+        <img src="oruss-preto-dourado.jpg" alt="Relógio ORUSS Preto e Dourado" />
+        <h2>Relógio ORUSS Preto &amp; Dourado</h2>
+        <p>
+          Design sofisticado, resistente à água (30m) e perfeito para todas as ocasiões.
+          Pulseira em aço inoxidável e ponteiros com visibilidade noturna.
+        </p>
+        <a
+          class="btn"
+          href="https://wa.me/5522999790572?text=Olá!%20Quero%20comprar%20o%20Relógio%20ORUSS%20Preto%20e%20Dourado."
+          target="_blank" rel="noopener"
+        >
+          Comprar pelo WhatsApp
+        </a>
+      </article>
 
-  <main>
-  <h1>Relógio ORUSS Preto Total</h1>
-  <img src="oruss-preto-total.jpg" alt="Relógio ORUSS Preto Total" width="400">
-  <p>Design moderno e elegante, todo em preto, resistente à água e ideal para qualquer ocasião.</p>
-  <a href="https://wa.me/5522999790572?text=Olá!%20Quero%20comprar%20o%20Relógio%20ORUSS%20Preto%20Total">Comprar pelo WhatsApp</a>
-</main>
+      <!-- ===== COMO ADICIONAR OUTROS RELÓGIOS =====
+      1) Copie o bloco <article class="card">…</article> acima.
+      2) Cole logo abaixo e troque:
+         - o arquivo da imagem (ex.: "oruss-azul-prata.jpg")
+         - o título (ex.: "Relógio ORUSS Azul & Prata")
+         - o texto
+         - o texto do link do WhatsApp
+      3) Envie as imagens para o repositório com exatamente o mesmo nome usado no src.
+      ================================================= -->
+    </div>
+
+    <footer>
+      © 2025 - Top Vendas | Pagamento Seguro via Mercado Pago | Envio para todo o Brasil
+    </footer>
+  </main>
+</body>
+</html>
