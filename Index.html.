@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vitrine — Relógio ORUSS Luxo Masculino</title>
+  <meta name="description" content="Vitrine simples com preço, detalhes e botão de WhatsApp para o Relógio ORUSS Luxo Masculino." />
+  <meta property="og:title" content="Relógio ORUSS Luxo Masculino — Vitrine" />
+  <meta property="og:description" content="Veja preço, fotos e fale no WhatsApp. Entrega para todo o Brasil." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=1200" />
+  <meta property="og:image:alt" content="Relógio masculino de pulso em close" />
+  <meta name="theme-color" content="#111827" />  <!-- Tailwind CSS CDN -->  <script src="https://cdn.tailwindcss.com"></script>  <!-- Favicons (opcional) -->  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⌚</text></svg>">
+</head>
+<body class="bg-neutral-950 text-neutral-100 min-h-screen">
+  <!-- Header -->
+  <header class="max-w-5xl mx-auto px-4 pt-10 pb-6">
+    <div class="flex items-center justify-between">
+      <h1 class="text-2xl md:text-3xl font-bold tracking-tight">Top Relógio</h1>
+      <a href="https://wa.me/5522999790572?text=Ol%C3%A1!%20Quero%20ver%20os%20rel%C3%B3gios." class="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-neutral-900 font-semibold transition">
+        <span>Falar no WhatsApp</span>
+      </a>
+    </div>
+    <p class="mt-2 text-neutral-400">Vitrine simples: veja os detalhes e as fotos antes de falar com a gente.</p>
+  </header>  <!-- Hero / Produto principal -->  <main class="max-w-5xl mx-auto px-4 pb-20">
+    <section class="grid md:grid-cols-2 gap-6 md:gap-10 items-stretch">
+      <!-- Card de imagem (sem hotlink de fotos reais; usamos uma foto ilustrativa e linkamos o álbum real) -->
+      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-neutral-800 to-neutral-900 border border-neutral-800 shadow-2xl">
+        <img 
+          src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=1600" 
+          alt="Relógio ORUSS Luxo Masculino" 
+          class="w-full h-80 md:h-full object-cover opacity-90" />
+        <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/70 via-transparent"></div>
+        <div class="absolute bottom-4 left-4 right-4 flex flex-wrap items-center gap-3">
+          <a href="https://photos.app.goo.gl/DXrWsoJQPeGLv5hf7" target="_blank" rel="noopener" 
+             class="rounded-2xl bg-white text-neutral-900 font-semibold px-4 py-2 hover:bg-neutral-200 transition">
+            Ver todas as fotos do modelo
+          </a>
+          <span class="text-sm text-neutral-300">Álbum do Google Fotos</span>
+        </div>
+      </div><!-- Card de informações -->
+  <div class="flex flex-col rounded-3xl border border-neutral-800 bg-neutral-900/60 p-6 md:p-8 shadow-2xl">
+    <div class="mb-5">
+      <h2 class="text-xl md:text-2xl font-bold">Relógio ORUSS Luxo Masculino</h2>
+      <p class="mt-1 text-neutral-400">Elegância e resistência para todas as ocasiões.</p>
+    </div>
+
+    <div class="mb-6">
+      <div class="text-3xl md:text-4xl font-extrabold">R$ 150,00</div>
+      <p class="mt-1 text-sm text-neutral-400">Pix com desconto • Cartão em até 3x</p>
+    </div>
+
+    <ul class="space-y-3 text-sm md:text-base">
+      <li class="flex gap-3"><span class="select-none">💧</span> <span><strong>Resistência:</strong> resistente à água (chuva leve / respingos). <em>Não é à prova d’água</em> para mergulho/banho.</span></li>
+      <li class="flex gap-3"><span class="select-none">🔗</span> <span><strong>Pulseira:</strong> aço inoxidável (não enferruja). Opção em silicone para uso em praia/piscina (verificar disponibilidade).</span></li>
+      <li class="flex gap-3"><span class="select-none">📏</span> <span><strong>Caixa:</strong> ~45&nbsp;mm (visual robusto e moderno).</span></li>
+      <li class="flex gap-3"><span class="select-none">⏱️</span> <span><strong>Mecanismo:</strong> analógico com calendário (quando aplicável).</span></li>
+      <li class="flex gap-3"><span class="select-none">📦</span> <span><strong>Envio:</strong> Correios / transportadora para todo o Brasil.</span></li>
+    </ul>
+
+    <div class="mt-8 grid sm:grid-cols-2 gap-3">
+      <a href="https://wa.me/5522999790572?text=Ol%C3%A1!%20Gostei%20do%20Rel%C3%B3gio%20ORUSS%20e%20quero%20saber%20disponibilidade." 
+         class="text-center rounded-2xl px-5 py-3 font-semibold bg-emerald-500 text-neutral-900 hover:bg-emerald-400 transition">
+        Falar no WhatsApp
+      </a>
+      <a href="https://photos.app.goo.gl/DXrWsoJQPeGLv5hf7" target="_blank" rel="noopener"
+         class="text-center rounded-2xl px-5 py-3 font-semibold border border-neutral-700 hover:border-neutral-500 hover:bg-neutral-800 transition">
+        Ver todas as fotos
+      </a>
+    </div>
+
+    <!-- Avisos rápidos -->
+    <div class="mt-6 text-xs text-neutral-400 leading-relaxed">
+      * Evite molhar o relógio em banho/mergulho. Para praia/piscina, prefira pulseira de silicone.
+      <br />
+      * Garantia de recebimento: acompanhamento por código de rastreio.
+    </div>
+  </div>
+</section>
+
+<!-- Seção: Como comprar (opcional) -->
+<section class="mt-16 rounded-3xl border border-neutral-800 bg-neutral-900/40 p-6 md:p-8">
+  <h3 class="text-lg md:text-xl font-bold mb-4">Como comprar</h3>
+  <ol class="list-decimal list-inside space-y-2 text-neutral-300">
+    <li>Veja as fotos do modelo.</li>
+    <li>Chame no WhatsApp para confirmar a disponibilidade.</li>
+    <li>Escolha pagamento via Pix (desconto) ou Cartão (até 3x).</li>
+    <li>Informe o CEP para calcular frete e prazo.</li>
+  </ol>
+</section>
+
+<!-- Rodapé -->
+<footer class="mt-12 py-8 text-center text-sm text-neutral-500">
+  <p>© <span id="year"></span> Top Relógio — Todos os direitos reservados.</p>
+</footer>
+
+  </main>  <script>
+    // Atualiza ano do rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script></body>
+</html>
